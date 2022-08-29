@@ -1,0 +1,28 @@
+@import './utilits/mixins';
+
+@import './base/_base.scss';
+@import './base/container';
+@import './base/section';
+
+
+
+@import './utilits/vars';
+@import './utilits/common';
+
+
+
+
+@import './layouts/header.scss';
+@import './layouts/hero';
+@import './layouts/skills';
+@import './layouts/team';
+@import './layouts/clients';
+@import './layouts/footer';
+@import './layouts/what-do-we-do';
+@import './layouts/portfolio';
+@import './layouts/modal';
+
+
+
+
+@import './components/buttons';

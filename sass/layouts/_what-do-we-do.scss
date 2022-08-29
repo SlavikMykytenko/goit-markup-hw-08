@@ -1,0 +1,60 @@
+
+/* WHAT-DO-WE-DO */
+.what-do-we-do {
+  padding-bottom: 94px;
+
+  & h2 {
+  margin-bottom: 50px;
+  margin-top: 0;
+}
+@media screen and(max-width:1199px) {
+  display: none;
+  
+}
+
+}
+
+
+
+
+
+.what-do-we-do__list {
+  gap: 30px; 
+  font-size: 14px;
+  line-height: 1.7;
+  padding-left: 0;
+  letter-spacing: 0.03em;
+  text-align: left;
+  color: #757575;
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+}
+
+
+.what-do-we-do__z-overlay {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 370px;
+  height: 70px;
+  position: absolute;
+  bottom: 0;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin-top: 0;
+  margin-bottom: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: calc(16 / 144);
+  text-align: center;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+  background: rgba(47, 48, 58, 0.8);
+}
+
+
+
