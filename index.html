@@ -12,7 +12,7 @@
   <link rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
   <link rel="stylesheet" href="./css/main.min.css" />
-  <link rel="stylesheet" href="./css/main.css" />
+
   <title>Студія</title>
 </head>
 
@@ -21,12 +21,13 @@
   <header class="header">
     <div class="header__container container">
       <div class="header__left-part-of-header">
-       
-          <a class="header__logo " href="index.html"><span>Web</span>Studio</a>
-        
-         <nav class="navigation">
+
+        <a class="header__logo " href="index.html"><span>Web</span>Studio</a>
+
+        <nav class="navigation">
           <ul class="navigation__links">
-            <li class="navigation__item"><a class="menu underline navigation__item--active" href="./index.html">Студія</a></li>
+            <li class="navigation__item"><a class="menu underline navigation__item--active"
+                href="./index.html">Студія</a></li>
             <li class="navigation__item "><a class="menu " href="./portfolio.html">Портфоліо</a></li>
             <li class="navigation__item"><a class="menu" href="">Контакти</a></li>
           </ul>
@@ -34,24 +35,29 @@
       </div>
 
       <!-- <div class="header-right"> -->
-        <ul class="navigation__links-contacts">
+      <ul class="navigation__links-contacts">
 
-          <li class="navigation__item">
+        <li class="navigation__item">
 
-            <a class="header__web-link" href="mailto:info@devstudio.com"><svg class="header__icon">
-                <use href="./images/symbol-defs.svg#icon-mail"></use>
-              </svg>info@devstudio.com</a>
-          </li>
+          <a class="header__web-link" href="mailto:info@devstudio.com"><svg class="header__icon">
+              <use href="./images/symbol-defs.svg#icon-mail"></use>
+            </svg>info@devstudio.com</a>
+        </li>
 
-          <li class="navigation__item">
+        <li class="navigation__item">
 
-            <a class="header__web-link" href="call:+3809611111"><svg class="header__icon">
-                <use href="./images/symbol-defs.svg#icon-tel"></use>
-              </svg>+38 096 111 11 11</a>
-          </li>
-        </ul>
-     <button class="boorger" data-menu-button type="button">x</button>
-     <div class="boorger-menu" data-menu ><button class="boorger" data-menu-close type="button">x</button></div>
+          <a class="header__web-link" href="call:+3809611111"><svg class="header__icon">
+              <use href="./images/symbol-defs.svg#icon-tel"></use>
+            </svg>+38 096 111 11 11</a>
+        </li>
+      </ul>
+
+      <button class="boorger" type="button"><svg data-menu-button width="40" height="40">
+          <use href="./images/symbol-defs.svg#icon-boorger" ></use>
+        </svg></button>
+      <div class="boorger-menu" data-menu>
+        <!-- <button class="boorger" data-menu-close type="button">x</button> -->
+      </div>
     </div>
   </header>
 
@@ -65,8 +71,8 @@
     </section> -->
     <!-- <section class="skills section">
       <div class="container">  -->
-        <!-- <h2>Опис контенту</h2> -->
-         <!-- <ul class="skills__list">
+    <!-- <h2>Опис контенту</h2> -->
+    <!-- <ul class="skills__list">
           <li class="skills__item">
             <svg class="skills__svg" width="70" height="70">
               <use href="./images/symbol-defs.svg#icon-anthena"></use>
@@ -106,29 +112,51 @@
         </ul>
       </div>
     </section> -->
-    <!-- <section class="what-do-we-do">
+    <section class="what-do-we-do">
       <h2>Чим ми займаємося</h2>
       <div class="container">
         <ul class="what-do-we-do__list">
-          <li><img src="images/1.jpg" alt="програмування на компютері" width="370" />
+          <li>
+            <img src="/images/desktop/studio/img1-desktop.jpg" srcset="/images/desktop/studio/img1-desktop.jpg 1x,
+            /images/desktop/studio/img1-desktop@2x.jpg 2x" alt="програмування на компютері" width="100%"
+              height="auto" />
+
             <h3 class="what-do-we-do__z-overlay">ДЕСКТОПНІ ДОДАТКИ</h3>
           </li>
           <li>
-            <img src="images/2.jpg" alt="розробка додатку для мобільних пристроїв" width="370" />
+
+            <img src="/images/desktop/studio/img2-desktop.jpg" srcset="/images/desktop/studio/img2-desktop.jpg 1x,
+            /images/desktop/studio/img2-desktop@2x.jpg 2x" alt="розробка додатку для мобільних пристроїв" width="100%"
+              height="auto" />
             <h3 class="what-do-we-do__z-overlay">МОБІЛЬНІ ДОДАТКИ</h3>
           </li>
-          <li><img src="images/3.jpg" alt="робота з кольорами на планшеті" width="370" />
+          <li>
+            <img src="/images/desktop/studio/img3-desktop.jpg" srcset="/images/desktop/studio/img3-desktop.jpg 1x,
+            /images/desktop/studio/img3-desktop@2x.jpg 2x" alt="робота з кольорами на планшеті" width="100%"
+              height="auto" />
             <h3 class="what-do-we-do__z-overlay">ДИЗАЙНЕРСЬКІ РІШЕННЯ</h3>
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <section class="team">
       <h2>Наша команда</h2>
       <div class="container">
         <ul class="team__list">
-          <li>
-            <img src="images/man1.jpg" alt="Чоловік в окулярах" width="270" />
+          <li class="team__item">
+            <picture>
+              <source srcset="./images/images/mob/studio/ihordemianenko-mob.jpg 1x,
+              ./images/images/mob/studio/ihordemianenko-mob@2x.jpg 2x" media="(max-width:767px)">
+
+              <source srcset="./images/images/tablet/studio/ihordemianenko-tablet.jpg 1x,
+              ./images/images/tablet/studio/ihordemianenko-tablet@2x.jpg 2x" media="(max-width:1199px)">
+              <source srcset="./images/images/desktop/studio/ihordemianenko-desktop.jpg 1x,
+              ./images/images/desktop/studio/ihordemianenko-desktop@2x.jpg 2x" media="(min-width:1200px)">
+              <img
+                src="./images/images/mob/studio/ihordemianenko-mob.jpg 1x, ./images/images/mob/studio/ihordemianenko-mob@2x.jpg 2x"
+                alt="Чоловік в окулярах" />
+            </picture>
+
 
             <div class="team__position-info">
               <h3>Ігор Дем'яненко</h3>
@@ -157,8 +185,20 @@
               </ul>
             </div>
           </li>
-          <li>
-            <img src="images/woman.jpg" alt="жінка-блондинка" width="270" />
+          <li class="team__item">
+            <picture>
+              <source srcset="./images/images/mob/studio/olhariepina-mob.jpg 1x,
+              ./images/images/mob/studio/olhariepina-mob@2x.jpg 2x," media="(max-width:767px)">
+
+              <source srcset="./images/images/tablet/studio/olhariepina-tablet.jpg 1x,
+              ./images/images/tablet/studio/olhariepina-tablet@2x.jpg 2x" media="(max-width:1199px)">
+              <source srcset="./images/images/desktop/studio/olhariepina-desktop.jpg 1x,
+              ./images/images/desktop/studio/olhariepina-desktop@2x.jpg 2x" media="(min-width:1200px)">
+              <img
+                src="./images/images/mob/studio/olhariepina-mob.jpg 1x, ./images/images/mob/studio/olhariepina-mob@2x.jpg 2x"
+                alt="жінка-блондинка" />
+
+            </picture>
 
             <div class="team__position-info">
               <h3>Ольга Рєпіна</h3>
@@ -187,8 +227,24 @@
               </ul>
             </div>
           </li>
-          <li>
-            <img src="images/man2.jpg" alt="маркетолог" width="270" />
+          <li class="team__item">
+
+
+
+            <picture>
+
+              <source srcset="./images/images/mob/studio/mykolatarasov-mob.jpg 1x,
+              ./images/images/mob/studio/mykolatarasov-mob@2x.jpg 2x" media="(max-width:767px)">
+
+              <source srcset="./images/images/tablet/studio/mykolatarasov-tablet.jpg 1x,
+              ./images/images/tablet/studio/mykolatarasov-tablet@2x.jpg 2x" media="(max-width:1199px)">
+              <source srcset="./images/images/desktop/studio/mykolatarasov-desktop@2x.jpg 2x,
+              ./images/images/desktop/studio/mykolatarasov-desktop.jpg" media="(min-width:1200px)">
+              <img
+                src="./images/images/mob/studio/mykolatarasov-mob.jpg 1x, ./images/images/mob/studio/mykolatarasov-mob@2x.jpg 2x"
+                alt="маркетолог" />
+
+            </picture>
 
             <div class="team__position-info">
               <h3>Микола Тарасов</h3>
@@ -217,9 +273,21 @@
               </ul>
             </div>
           </li>
-          <li>
-            <img src="images/man3.jpg" alt="дизайнер" width="270" />
+          <li class="team__item">
 
+            <picture>
+              <source srcset="./images/images/mob/studio/mykhailoyermakov-mob.jpg 1x,
+   ./images/images/mob/studio/mykhailoyermakov-mob@2x.jpg 2x" media="(max-width:767px)">
+
+              <source srcset="./images/images/tablet/studio/mykhailoyermakov-tablet.jpg 1x,
+              ./images/images/tablet/studio/mykhailoyermakov-tablet@2x.jpg 2x" media="(max-width:1199px)">
+              <source srcset="./images/images/desktop/studio/mykhailoyermakov-desktop.jpg 1x,
+              ./images/images/desktop/studio/mykhailoyermakov-desktop@2x.jpg 2x" media="(min-width:1200px)">
+              <img
+                src="./images/images/mob/studio/mykhailoyermakov-mob.jpg 1x, ./images/images/mob/studio/mykhailoyermakov-mob@2x.jpg 2x,"
+                alt="дизайнер" />
+
+            </picture>
             <div class="team__position-info">
               <h3>Михайло Єрмаков</h3>
               <p>UI Designer</p>
@@ -249,43 +317,45 @@
           </li>
         </ul>
       </div>
-    </section>
-    <!-- <section class="clients">
+      <!-- </section>
+    <section class="clients">
       <div class="container">
         <h2>Постійні клієнти</h2>
         <ul class="clients__list">
-          <li><a href=""><svg  class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo"></use>
+          <li><a  class="clients__item" href=""><svg  class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-1"></use>
               </svg></li></a>
-          <li><a href=""><svg class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo-1"></use>
+          <li><a  class="clients__item" href=""><svg class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-2"></use>
               </svg></li></a>
-          <li><a href=""><svg class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo-2"></use>
+          <li><a  class="clients__item" href=""><svg class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-3"></use>
               </svg></li></a>
-          <li><a href=""><svg class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo-3"></use>
+          <li><a  class="clients__item" href=""><svg class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-4"></use>
               </svg></li></a>
-          <li><a href=""><svg class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo-4"></use>
+          <li><a  class="clients__item" href=""><svg class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-5"></use>
               </svg></li></a>
-          <li><a href=""><svg class="clients__logo">
-                <use href="./images/symbol-defs.svg#icon-logo-5"></use>
+          <li><a  class="clients__item" href=""><svg class="clients__logo">
+                <use href="./images/symbol-defs.svg#client-6"></use>
               </svg></li></a>
         </ul>
       </div>
     </section> -->
   </main>
-  <!-- <footer class="footer">
+  <footer class="footer">
     <div class="container footer__container">
-      <div>
+
+      <div class="">
         <div class="footer__logo-margin">
           <a class="footer__logo" href="index.html">Web<span>Studio</span></a>
         </div>
         <address class="address">
           <ul class="footer__address">
             <li>
-              <a class="footer__place" href="" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки, 26</a>
+              <a class="footer__place" href="" target="_blank" rel="noopener noreferrer">м. Київ, пр-т Лесі Українки,
+                26</a>
             </li>
             <li><a class="footer__web-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
             <li><a class="footer__cell" href="call:+3809611111">+38 096 111 11 11</a></li>
@@ -294,7 +364,9 @@
       </div>
       <div>
 
-        <div class="footer__soc-links-margin"><p class="footer__p">Приєднуйтесь</p>
+        <div class="footer__soc-links-container">
+
+          <p class="footer__p">Приєднуйтесь</p>
 
           <div class="footer__social-links">
 
@@ -319,25 +391,24 @@
               </a>
           </div>
         </div>
-   
-
-
 
       </div>
 
-    
       <div class="footer__form">
-        <p class="footer__p">Підпишіться на розсилку</p>
-        <div class="footer__social-links">
-          <input type="email" class="footer__input" name="user-email" placeholder="E-mail" required>
 
-        </div>
+        <p class="footer__p">Підпишіться на розсилку</p>
+        <form class="footer__form-container">
+
+          <input type="email" class="footer__input" name="user-email" placeholder="E-mail" required>
+          <button class="button-plane" type="submit">Підписатися<svg class="footer__icon-plane">
+              <use href="./images/symbol-defs.svg#icon-plane" width="24"></use>
+            </svg></button>
+        </form>
+
+
       </div>
-      <button class="button-plane" type="submit">Підписатися<svg class="footer__icon-plane">
-          <use href="./images/symbol-defs.svg#icon-plane" width="24"></use>
-        </svg></button>
     </div>
-  </footer> -->
+  </footer>
   <div class="backdrop  is-hidden" data-modal>
     <div class="modal">
       <p class="modal__title">Залиште свої дані, ми вам передзвонимо</p>

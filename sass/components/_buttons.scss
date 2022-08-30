@@ -55,9 +55,10 @@
 
 .button-plane {
   margin-top: 44px;
+  width: 200px;
   background-color: var(--blue-color);
   color: var(--white-color);
-  margin: 7px 0 0 12px;
+  margin: 0px 0 0 12px;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.8;
@@ -73,4 +74,24 @@
 }
 .button-plane:hover {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+
+.boorger{
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding:0;
+  border: none;
+  background-color: transparent;
+  @media screen  and(min-width:768px)
+  {
+    display: none;
+  }
+}
+
+.boorger-menu{
+  position: absolute;
 }
