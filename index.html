@@ -52,27 +52,80 @@
         </li>
       </ul>
 
-      <button class="boorger" type="button"><svg data-menu-button width="40" height="40">
+      <button data-menu-button class="boorger" type="button"><svg  width="40" height="40">
           <use href="./images/symbol-defs.svg#icon-boorger" ></use>
         </svg></button>
-      <div class="boorger-menu" data-menu>
-        <!-- <button class="boorger" data-menu-close type="button">x</button> -->
-      </div>
+      
     </div>
+<div class="mobile-menu" data-menu>
+
+
+        <button class="boorger" data-menu-close type="button">
+          <svg class="mobile__icon">
+              <use href="./images/symbol-defs.svg#icon-x">
+
+              </use>
+            </svg>
+          </button>
+          <nav class="mobile-nav">
+          <ul class="mobile-nav__links">
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link mobile-nav__link--active"
+                href="./index.html">Студія</a>
+              </li>
+            <li class="mobile-nav__item ">
+              <a class="mobile-nav__link " href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-nav__item">
+              <a class="mobile-nav__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+       <div class="mobile-wrap">
+     <ul class="mobile-contacts">
+
+        <li class="mobile-contacts__item">
+
+         <a class="mobile-contacts__tel" href="call:+3809611111">+38 096 111 11 11</a>
+        </li>
+
+        <li class="mobile-contacts__item">
+ <a class="mobile-contacts__mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+          
+        </li>
+      </ul>
+
+<ul class="mobile-soc">
+<li class="mobile-soc__item">
+  <a href="" class="mobile-soc__link">Instagram</a>
+</li>
+<li class="mobile-soc__item">
+   <a href="" class="mobile-soc__link">Twitter</a>
+</li>
+<li class="mobile-soc__item">
+   <a href="" class="mobile-soc__link">Facebook</a>
+</li>
+<li class="mobile-soc__item">
+   <a href="" class="mobile-soc__link">LinkedIn</a>
+</li>
+</ul>
+</div>
+</div>
+
   </header>
 
   <main>
-    <!-- <section class="hero">
+    <section class="hero">
       <h1>
         Ефективні рішення для<br />
         вашого бізнесу
       </h1>
       <button class="button-1" type="button" data-modal-open>Замовити послугу</button>
-    </section> -->
-    <!-- <section class="skills section">
-      <div class="container">  -->
+    </section>
+    <section class="skills section">
+      <div class="container"> 
     <!-- <h2>Опис контенту</h2> -->
-    <!-- <ul class="skills__list">
+    <ul class="skills__list">
           <li class="skills__item">
             <svg class="skills__svg" width="70" height="70">
               <use href="./images/symbol-defs.svg#icon-anthena"></use>
@@ -111,7 +164,7 @@
           </li>
         </ul>
       </div>
-    </section> -->
+    </section>
     <section class="what-do-we-do">
       <h2>Чим ми займаємося</h2>
       <div class="container">
@@ -153,7 +206,7 @@
               <source srcset="./images/images/desktop/studio/ihordemianenko-desktop.jpg 1x,
               ./images/images/desktop/studio/ihordemianenko-desktop@2x.jpg 2x" media="(min-width:1200px)">
               <img
-                src="./images/images/mob/studio/ihordemianenko-mob.jpg 1x, ./images/images/mob/studio/ihordemianenko-mob@2x.jpg 2x"
+                src="./images/images/mob/studio/ihordemianenko-mob.jpg "
                 alt="Чоловік в окулярах" />
             </picture>
 
@@ -195,7 +248,7 @@
               <source srcset="./images/images/desktop/studio/olhariepina-desktop.jpg 1x,
               ./images/images/desktop/studio/olhariepina-desktop@2x.jpg 2x" media="(min-width:1200px)">
               <img
-                src="./images/images/mob/studio/olhariepina-mob.jpg 1x, ./images/images/mob/studio/olhariepina-mob@2x.jpg 2x"
+                src="./images/images/mob/studio/olhariepina-mob.jpg "
                 alt="жінка-блондинка" />
 
             </picture>
@@ -241,7 +294,7 @@
               <source srcset="./images/images/desktop/studio/mykolatarasov-desktop@2x.jpg 2x,
               ./images/images/desktop/studio/mykolatarasov-desktop.jpg" media="(min-width:1200px)">
               <img
-                src="./images/images/mob/studio/mykolatarasov-mob.jpg 1x, ./images/images/mob/studio/mykolatarasov-mob@2x.jpg 2x"
+                src="./images/images/mob/studio/mykolatarasov-mob.jpg "
                 alt="маркетолог" />
 
             </picture>
@@ -284,7 +337,7 @@
               <source srcset="./images/images/desktop/studio/mykhailoyermakov-desktop.jpg 1x,
               ./images/images/desktop/studio/mykhailoyermakov-desktop@2x.jpg 2x" media="(min-width:1200px)">
               <img
-                src="./images/images/mob/studio/mykhailoyermakov-mob.jpg 1x, ./images/images/mob/studio/mykhailoyermakov-mob@2x.jpg 2x,"
+                src="./images/images/mob/studio/mykhailoyermakov-mob.jpg"
                 alt="дизайнер" />
 
             </picture>
@@ -317,7 +370,7 @@
           </li>
         </ul>
       </div>
-      <!-- </section>
+      </section>
     <section class="clients">
       <div class="container">
         <h2>Постійні клієнти</h2>
@@ -342,7 +395,7 @@
               </svg></li></a>
         </ul>
       </div>
-    </section> -->
+    </section>
   </main>
   <footer class="footer">
     <div class="container footer__container">
