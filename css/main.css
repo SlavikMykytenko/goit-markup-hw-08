@@ -505,10 +505,6 @@ h1 {
   }
 }
 
-.team__item {
-  flex-basis: calc((100% - 60px) / 2);
-}
-
 .team__position-info h3,
 p {
   margin: 0;
