@@ -348,7 +348,7 @@ body {
   color: var(--blue-color);
 }
 
-.header {
+.header--underline {
   border-bottom: 1px solid #ECECEC;
 }
 
