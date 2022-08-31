@@ -14,19 +14,38 @@
   align-items: center;
 }
 
-.header__logo {
-  color: #000000;
-  font-family: 'Raleway';
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  text-decoration: none;
+// .header__logo {
+//   color: #000000;
+//   font-family: 'Raleway';
+//   font-weight: 700;
+//   font-size: 26px;
+//   line-height: 1.19;
+//   text-decoration: none;
+//   padding-bottom: 25px;
+//   padding-top: 24px;
+
+//   & span {
+//     color: #2196f3;
+//   }
+// }
+
+.logo--dark {
   padding-bottom: 25px;
   padding-top: 24px;
 
   & span {
     color: #2196f3;
   }
+}
+
+.logo {
+  color: #000000;
+  font-family: 'Raleway';
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+  text-decoration: none;
+  
 }
 
 .header__web-link {
